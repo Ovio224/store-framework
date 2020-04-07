@@ -1,6 +1,7 @@
 {
   "slider-layout#home": {
-    "children": [
+    "children": 
+    [
         "image#brand1",
         "image#brand2",
         "image#brand3",
