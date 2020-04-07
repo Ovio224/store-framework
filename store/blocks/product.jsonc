@@ -82,7 +82,8 @@
         "showValueForVariation": "none",
         "showVariationsLabels": true,
         "initialSelection": "empty",
-        "showVariationsErrorMessage": true
+        "showVariationsErrorMessage": true,
+        "showValueNameForImageVariation": true
       }
     }
 }
