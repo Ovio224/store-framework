@@ -78,10 +78,10 @@
   },
     "sku-selector": {
       "props": {
+        "displayMode": "text",
         "showValueForVariation": "none",
         "showVariationsLabels": true,
         "initialSelection": "empty",
-        "displayMode": "text",
         "showVariationsErrorMessage": true
       }
     }
