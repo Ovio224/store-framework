@@ -1,29 +1,89 @@
 {
-  "store.search": {
-    "blocks": [
-    "search-result-layout"
+ "store.product": {
+    "children": [
+      "breadcrumb",
+      "flex-layout.row#main",
+      "shelf.relatedProducts"
     ]
   },
-   "search-result-layout": {
-      "blocks": [
-         "search-result-layout.desktop",
-         "search-result-layout.mobile",
-         "search-not-found-layout"
-      ]
-   },
-   "search-result-layout.desktop": {
+  "flex-layout.row#main": { 
+    "props": { 
+      "marginTop": 6
+    },
     "children": [
-         "breadcrumb.search",
-         "search-title.v2",
-         "total-products.v2",
-         "order-by.v2",
-         "search-fetch-previous",
-         "search-content",
-         "filter-navigator.v3",
-         "search-fetch-more"
+      "flex-layout.col#left",
+      "flex-layout.col#right"
+    ]
+  },
+  "flex-layout.col#left": {
+    "children": [
+        "stack-layout#brand"
+    ]
+  },
+  "flex-layout.col#right": {
+    "children": [
+      "product-name",
+      "product-identifier.product",
+      "product-price",
+      "flex-layout.row#qty-sku",
+      "product-quantity",
+      "shipping-simulator",
+      "buy-button"
     ],
-    "props": {
-        "pagination": "show-more"
+  "props": {
+    "verticalAlign": "middle",
+    "preventVerticalStretch": true
     }
+  },
+   "product-price": {
+      "props": {
+        "showSavings": true,
+        "showListPrice": true
+    }
+  },
+  "product-images": {
+    "props": {
+      "displayThumbnailsArrows": true
+    }
+  },
+  "product-name": {
+    "props": {
+      "showSKU": true,
+      "showBrandName": true
+    }
+   },
+  "buy-button#product": {
+   "props": {
+     "isOneClickBuy": true,
+     "showTooltipOnSkuNotSelected": false
    }
+  },
+    "flex-layout.row#qty-sku": {
+      "children": [
+        "sku-selector",
+        "product-quantity"
+      ]
+    },
+    "stack-layout#brand": {
+        "children": [
+            "product-images",
+            "product-brand"
+        ]
+    },
+  "product-brand": {
+    "props": {
+      "displayMode": "logo",
+      "height": 30
+    }
+  },
+    "sku-selector": {
+      "props": {
+        "displayMode": "text",
+        "showValueForVariation": "none",
+        "showVariationsLabels": true,
+        "initialSelection": "empty",
+        "showVariationsErrorMessage": true,
+        "showValueNameForImageVariation": true
+      }
+    }
 }
