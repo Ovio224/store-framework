@@ -14,10 +14,12 @@
   "flex-layout.col#img": {
     "children": [
       "image#menu",
-      "rich-text#header",
-      "paddingRight",
-      "horizontalAlign"
-    ]
+      "rich-text#header"
+    ],
+    "props": {
+      "paddingRight": 4,
+      "horizontalAlign": "right"
+    }
   },
   "image#menu": {
     "props": {
@@ -27,12 +29,6 @@
       },
       "alt": "Coffee Makers Collection",
       "maxWidth": "200px"
-    }
-  },
-  "rich-text#header": {
-    "props": {
-      "paddingRight": 4,
-      "horizontalAlign": "right"
     }
   }
 }
