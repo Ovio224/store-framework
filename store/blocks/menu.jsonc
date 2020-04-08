@@ -26,10 +26,10 @@
   },
   "vtex.menu@2.x:submenu#small": {
     "children": [
-      "vtex.menu@2.x:menu#small"
+      "flex-layout.row#small"
     ]
   },
-  "vtex.menu@2.x:menu#small": {
+  "flex-layout.row#small": {
     "children": [
       "menu-item#mixers",
       "menu-item#toasters",
@@ -41,10 +41,10 @@
   },
   "vtex.menu@2.x:submenu#electronics": {
     "children": [
-      "vtex.menu@2.x:menu#electronics"
+      "flex-layout.row#electronics"
     ]
   },
-  "vtex.menu@2.x:menu#electronics": {
+  "flex-layout.row#electronics": {
     "children": [
       "menu-item#cameras",
       "menu-item#laptops",
