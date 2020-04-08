@@ -51,6 +51,7 @@
   },
   "header-row#main-mobile": {
     "children": [
+      "drawer",
       "logo",
       "header-spacer",
       "minicart",
@@ -88,10 +89,10 @@
   },
   "header-row#menu": {
     "children": [
-      "drawer",
       "header-spacer",
       "vtex.menu@2.x:menu#categories",
-      "header-spacer"
+      "header-spacer",
+      "drawer"
     ]
   }
 }
